@@ -1,0 +1,17 @@
+body{
+    font-family: 'Redressed', cursive;
+}
+
+/*Configurações Gerais*/
+
+/*Navbar*/
+
+/*Carousel*/
+
+/*NavBar Vertical*/
+
+.scrollspySite{
+    position: relative;
+    overflow: auto;
+    height: 260px;
+}

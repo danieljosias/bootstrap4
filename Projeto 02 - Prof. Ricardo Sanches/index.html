@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 02</title>
+    <!--css-->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!--css do bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+
+    <!--Fontwesome-->
+    <script src="https://kit.fontawesome.com/9860e3b8b6.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+    <!--Navbar-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary"><!--navbar/navbar largo/classes de estilo-->
+        <div class="container">
+            <a class="navbar-brand h1 mb-0" href="#">Hyundai</a><!--nome lado esquerdo do navbar/logotipo-->
+            <!--botão clicável para o menu-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                <span class="navbar-toggler-icon"></span> <!--ícone do botão do menu-->
+            </button>    
+            <div class="collapse navbar-collapse" id="navbarSite"> <!--conteúdo do navbar-->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white"  href="#">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Contatos</a>
+                    </li>
+                </ul>
+
+                    <ul class="nav-bar ml-auto mb-1" style="list-style: none;"> <!--menu dropdown-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" data-toggle="dropdown" id="navDrop">
+                                Social
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Facebook</a>
+                                <a class="dropdown-item" href="#">Twitter</a>
+                                <a class="dropdown-item" href="#">Instagram</a>
+                            </div>    
+                        </li>
+                    </ul>
+
+                    <form class="form-inline">
+                        <input class="form-control ml-4 mr-2" type="search" placeholder="Buscar...">
+                        <button class="btn btn-dark" type="submit">Ok</button>
+                    </form>
+            </div>
+        </div>
+    </nav>
+    
+    <!--Carousel-->
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+        <!--indicadores do carousel-->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li><!--img 01-->
+            <li data-target="#carousel" data-slide-to="1"></li><!--img 02-->
+        </ol>
+        <!--imgs do carousel-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/carousel-01.jpg" alt="" class="img-fluid d-block">
+                
+            <!--texto da img do carousel-->
+            <div class="carousel-caption">
+                <h3 class="text-dark">Hyundai</h3>
+                <p>Verão de ofertas com Hyundai Express.</p>
+            </div>
+            
+        </div>
+            
+            <div class="carousel-item">
+                <img src="img/carousel-02.jpg" alt="" class="img-fluid d-block"> 
+            </div>
+        </div>
+        <!--setas do carousel-->
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 my-5">
+                <h1>Seja Bem-Vindo a Hyundai Brasil.</h1>
+                <p>Conheça a nossa linha HB20, sedans, CRETA e SUVs. Confira nossas ofertas, serviços, experiências e concessionárias.</p>
+            </div>        
+        </div>
+    </div>
+    <!--Navbar na vertical-->
+    <div class="row">
+        <div class="col-md-6 col-md-4 mb-2">
+            <nav id="navbarVertical" class="navbar navbar-light bg-light">
+
+                <nav class="nav nav-pills flex-column">
+                    
+                    <a class="nav-link" href="#">Linha HB20</a>
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ml-3" href="#item1-1">HB20X</a>
+                        <a class="nav-link ml-3" href="#item1-2">HB20S</a>
+                    </nav>
+                    
+                    <a class="nav-link" href="#">Linha Creta</a>
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ml-3" href="#item2-1">Creta Atitude 1.6</a>
+                        <a class="nav-link ml-3" href="#item2-2">Creta Sport 2.0</a>
+                    </nav>
+                    
+                </nav>
+            </nav>
+        </div>
+        
+        <div class="col-md-6">
+            <div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollspySite">
+    
+                <h4 id="item1-1" class="my-3" >HB20X</h4>
+                <p>Motor: 1.6
+                Direção: Hidráulica    
+                Câmbio: Automático
+                Trava: Elétrica
+                Cor: Preta
+                </p>
+
+                <h4 id="item1-2" class="my-3">HB20S</h4>
+                <p>Motor: 1.6
+                    Direção: Hidráulica    
+                    Câmbio: Manual
+                    Trava: Elétrica
+                    Cor: Prata
+                </p>
+                    
+
+                <h4 id="item2-1" class="my-5">Creta Atitude 1.6</h4>
+                <p>
+                    Motor: 1.6
+                    Direção: Hidráulica    
+                    Câmbio: Automático
+                    Trava: Elétrica
+                    Cor: Prata
+                    Flex
+                </p>
+
+                <h4 id="item2-2" class="my-5">Creta Sport 2.0</h4>
+                <p>Motor: 2.0
+                    Direção: Hidráulica    
+                    Câmbio: Automático
+                    Trava: Elétrica
+                    Cor: Prata
+                    Flex</p>
+            </div>
+        </div>
+        
+        <!--Card-->
+        <div class="container">
+            <h1 class="mt-5">Linha SUV</h1>
+        <div class="row my-5">
+           <div class="col-sm-4">
+               <div class="card">
+                   <img class="card-img-top" src="img/creta.jpg" alt="">
+                   <div class="card-body">
+                    <h4 class="card-title">CRETA</h4>
+                    <h6 class="card-subtitle text-muted mb-2">Motor 1.6</h6>   
+                    <p>
+                    Projeção Arrojada</p>
+                    <p>Moderno e ousado</p>   
+                    <p>Câmera de ré</p>
+                    <p>Carregador sem fio</p>
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">Saiba mais</a>
+                   </div>
+               </div>
+           </div>
+           <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/ix30.jpg" alt="">
+                <div class="card-body">
+                 <h4 class="card-title">New IX35</h4>
+                 <h6 class="card-subtitle text-muted mb-2">Motor 2.0</h6>   
+                 <p>
+                    <p>Conforto</p>
+                    <p>Entretenimento</p>
+                    <p>Automático</p>
+                    <p>Espaçoso</p>
+                 </p>
+                 <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal02">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/tucson.jpg" alt="">
+                    <div class="card-body">
+                    <h4 class="card-title">New Tucson</h4>
+                    <h6 class="card-subtitle text-muted mb-2">Motor 1.6</h6>   
+                    <p>Direção elétrica</p>   
+                    <p>Freio ABS</p>
+                    <p>Travas Elétricas</p>
+                    <p>Ar-condicionado</p>
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal03">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>         
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="display-4"><i class="fas fa-video text-primary"></i>Hyundai</h1>
+                 <p class="lead">Multinacional sul-coreana de automóveis</p>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+            <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
+                    
+                    <li class="nav-item">
+                         <a class="nav-link active" id="nav-pills-01" data-toggle="pill" href="#nav-item-01">item 01</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-pills-02" data-toggle="pill" href="#nav-item-02">item 02</a>
+                   </li>
+
+                   <li class="nav-item">
+                    <a class="nav-link" id="nav-pills-03" data-toggle="pill" href="#nav-item-03">item 03</a>
+                    </li>
+
+                </ul>
+
+                <div class="tab-content" id="nav-pills-content">
+                    <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/L0oaphfklW8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                CRETA 1.6
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade show active" id="nav-item-02" role="tabpanel">
+                        02
+                    </div>
+
+                    <div class="tab-pane fade show active" id="nav-item-03" role="tabpanel">
+                        03
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--formulário-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center my-5">
+                <h1 class="display-4"><i class="fas fa-paper-plane text-primary"></i>Formulário</h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+            <div class="col-sm-12 col-md-10 col-lg-8">
+                <form>
+                    <div class="form-row">
+                        
+                        <div class="form-group col-sm-6">
+                            <label for="inputNome">Nome</label>
+                            <input type="text" class="form-control" id="inputNome" placeholder="Digite seu nome">
+                        </div>
+                    
+                    
+                        <div class="form-group col-sm-6">
+                            <label for="inputSobrenome">Sobrenome</label>
+                            <input type="text" class="form-control" id="inputSobrenome" placeholder="Digite seu Sobrenome">
+                        </div>
+
+                    </div>    
+                        
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                            <label for="inputEndereco">Endereço</label>
+                            <input type="text" class="form-control" id="inputEndereco" placeholder="Digite seu Email">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="inputCidade">Cidade</label>
+                            <input type="text" class="form-control" id="inputCidade" placeholder="Digite sua Cidade">
+                        </div>
+
+                        <div class="form-group col-sm-4">
+                            <label for="inputEstado">Estado</label>
+                            <select id="inputEstado" class="form-control">
+                                <option selected>Escolha..</option>
+                                <optgroup label="Sudeste">
+                                    <option>RJ</option>
+                                    <option>SP</option>
+                                    <option>MG</option>
+                                </optgroup>
+                                
+                                <optgroup label="Nordeste">
+                                    <option>BA</option>
+                                    <option>MA</option>
+                                    <option>CE</option>
+                                    <option>RN</option>
+                                    <option>SE</option>
+                                    <option>AL</option>
+                                </optgroup>
+                                
+                                <optgroup label="Sul">
+                                    <option>RS</option>
+                                    <option>SC</option>
+                                    <option>PR</option>
+                                </optgroup>
+                                
+                                <optgroup label="Norte"> 
+                                    <option>AM</option>
+                                    <option>RO</option>
+                                    <option>PA</option>
+                                    <option>TO</option>
+                                    <option>AC</option>
+                                </optgroup>
+                                
+                                <optgroup label="Centro-Oeste">
+                                    <option>DF</option>
+                                    <option>MT</option>
+                                    <option>GO</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div class="form-group col-sm-2">
+                            <label for="inputCEP">CEP</label>
+                            <input type="text" class="form-control" id="inputCEP" placeholder="CEP ">
+                        </div>
+                        
+                    </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-sm-12">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">Desejo receber novidades por e-mail
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                                <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="popover" data-placement="right" data-trigger="focus" title="Precisa de ajuda?" data-content="Ligue para 0800 777 2021">Ajuda</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row"><hr>
+            <div class="col-12 mb-3"><hr></div>
+                <div class="col-sm-4 text-center">
+                    <h3>Hyundai</h3>
+                    <p class="ml-2">A Hyundai opera a maior fábrica integrada de automóveis do mundo[9] em Ulsan, Coreia do Sul, que tem uma capacidade de produção anual de 1,6 milhão de unidades. A empresa emprega cerca de 75.000 pessoas em todo o mundo. Os veículos da Hyundai são vendidos em 193 países através de cerca de 5.000 concessionárias e showrooms.</p>
+                </div>
+            
+            <div class="col-sm-4 text-center">
+                <h3>Menu</h3>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Perfil</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Serviços</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Depoimentos</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Contatos</a>
+                </div>
+            </div>
+        
+            <div class="col-sm-4 text-center">
+                <h3>Rede Social</h3>
+                <div class="btn-group btn-block btn-group-lg" role="group">
+                    <a class="btn-outline-primary mb-2 p-2"><i class="fab fa-facebook-square"></i>Facebook</a>
+                    <a class="btn-outline-info mb-2 p-2"><i class="fab fa-twitter-square"></i>Twitter</a>
+                    <a class="btn-outline-warning p-2"><i class="fab fa-instagram"></i>Instagram</a>
+                </div>
+            </div>
+
+            <div class="col-12 mt-5">
+                <blockquote class="blockquote text-center">Ora, a fé é o firme fundamento das coisas que se esperam, e a prova das coisas que se não vêem.
+                    <footer class="blockquote-footer"><cite>Hebreus 11:1</cite></footer>
+                </blockquote>
+            </div>
+
+
+        </div>
+
+    </div>
+
+<!--modal-->
+ 
+    <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">CRETA</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>X</span>
+                    </button>
+                </div>
+                
+                <div class="modal-body">
+                    <p>Com transmissão automática de seis marchas, o Hyundai Creta 2020 tem um bom comportamento, oferecendo mais conforto ao dirigir e um consumo próximo da versão manual. ... Apenas um pouco mais lento que o manual, o modelo atinge os 100 km/h em 12,0 segundos e tem a mesma máxima de 172 km/h.</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" >Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+    <div class="modal fade" id="siteModal02" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">IX35</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>X</span>
+                    </button>
+                </div>
+                
+                <div class="modal-body">
+                    <p>O ix35 é um modelo da marca Hyundai, categoria SUV. Flex desde a sua nacionalização, em 2013, possui motor 2.0 que rende de 169 cv de potência e 20,4 kgfm de torque com gasolina ou 178 cv e 21,8 kgfm com etanol. O câmbio é automático de seis velocidades, com tração dianteira.</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" >Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+    <div class="modal fade" id="siteModal03" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">TUCSON</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>X</span>
+                    </button>
+                </div>
+                
+                <div class="modal-body">
+                    <p>MOTOR: Somente a gasolina, 2.0 16v, 4 cilindros e 142 cv a 6000 rpm. CÂMBIO: Manual 5 marchas ou automático 4 marchas com modo sequencial. DIMENSÕES: Comprimento 4325mm, largura 1795mm, altura 1680mm, altura em relação ao solo 195mm, peso 1535kg porta malas 320 litros e capacidade do tanque de combustível 58 litros.</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" >Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+
+
+    
+
+
+
+    <!--jQuery cdn versão min -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    
+    <!--Popper-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+    <!--Java Script do bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+
+    <!--Java Script-->
+    <script>
+       
+       $(function () {
+            $('[data-toggle="popover"]').popover()
+        });
+    
+    </script>
+
+</body>
+</html>
